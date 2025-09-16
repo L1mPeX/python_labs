@@ -1,45 +1,38 @@
-from typing import Optional
+from typing import List
 
 
-def is_valid_integer_string(input_string: str) -> bool:
-    """Проверяет, является ли строка корректным целым числом"""
-    cleaned = input_string.strip()
-    if not cleaned:
-        return False
-    if cleaned.startswith('-'):
-        return False
-    return cleaned.isdigit()
-
-
-def parse_integer_string(number_string: str) -> Optional[int]:
-    """Парсит строку в int, возвращает None при ошибке"""
-    try:
-        return int(number_string.strip())
-    except ValueError:
-        return None
-
-
-def get_valid_minutes(prompt: str) -> int:
-    """Получает и валидирует количество минут"""
+def get_valid_full_name(prompt: str) -> str:
+    """Запрашивает ФИО и проверяет, что введено хотя бы два слова"""
     while True:
-        user_input = input(prompt)
-        if not is_valid_integer_string(user_input):
-            print("Ошибка: нужно ввести целое неотрицательное число минут")
+        full_name = input(prompt)
+        if not full_name.strip():
+            print("Ошибка: ввод не может быть пустым")
             continue
 
-        minutes = parse_integer_string(user_input)
-        if minutes is None:
-            print("Ошибка: не удалось преобразовать в число")
+        parts: List[str] = full_name.split()
+        if len(parts) < 2:
+            print("Ошибка: требуется минимум два слова (Фамилия и Имя)")
             continue
 
-        return minutes
+        return full_name
+
+
+def build_initials(parts: List[str]) -> str:
+    """Формирует инициалы в верхнем регистре из списка слов"""
+    initials = "".join(word[0].upper() for word in parts) + "."
+    return initials
 
 
 def main() -> None:
-    minutes = get_valid_minutes("Минуты: ")
-    hours = minutes // 60
-    mins = minutes % 60
-    print(f"{hours}:{mins:02d}")
+    full_name = get_valid_full_name("ФИО: ")
+    trimmed = full_name.strip()
+    length = len(trimmed)
+
+    parts = trimmed.split()
+    initials = build_initials(parts)
+
+    print(f"Инициалы: {initials}")
+    print(f"Длина (символов): {length}")
 
 
 if __name__ == "__main__":
