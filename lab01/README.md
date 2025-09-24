@@ -89,7 +89,7 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
-[!Скриншот 1](../lab01/materials/1.png)
+![Скриншот 1](../lab01/materials/1.png)
 
 ---
 
@@ -191,7 +191,7 @@ if __name__ == "__main__":
     main()
 ```
 
-[!Скриншот 2](../lab01/materials/2.png)
+![Скриншот 2](../lab01/materials/2.png)
 ---
 
 ### `03_discount_vat.py`
@@ -288,7 +288,7 @@ if __name__ == "__main__":
     main()
 ```
 
-[!Скриншот 3](../lab01/materials/3.png)
+![Скриншот 3](../lab01/materials/3.png)
 
 ---
 
@@ -355,7 +355,7 @@ if __name__ == "__main__":
 
 ```
 
-[!Скриншот 4](../lab01/materials/4.png)
+![Скриншот 4](../lab01/materials/4.png)
 
 ---
 
@@ -417,7 +417,7 @@ if __name__ == "__main__":
 
 ```
 
-[!Скриншот 5](../lab01/materials/5.png)
+![Скриншот 5](../lab01/materials/5.png)
 
 ---
 
@@ -503,7 +503,7 @@ if __name__ == "__main__":
 
 ```
 
-[!Скриншот 6](../lab01/materials/6.png)
+![Скриншот 6](../lab01/materials/6.png)
 
 ---
 
@@ -568,7 +568,7 @@ if __name__ == "__main__":
     main()
 ```
 
-[!Скриншот 7](../lab01/materials/7.png)
+![Скриншот 7](../lab01/materials/7.png)
 
 ---
 
