@@ -26,5 +26,5 @@ jobs:
 
       - name: Run pytest
         run: | 
-          pip install -e lab02/
+          pip install -e .
           pytest -v lab02/tests
