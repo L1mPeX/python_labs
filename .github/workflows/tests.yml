@@ -25,4 +25,6 @@ jobs:
           pip install -r lab02/requirements.txt
 
       - name: Run pytest
-        run: pytest -v lab02/tests
+        run: | 
+          pip install -e lab02/
+          pytest -v lab02/tests
