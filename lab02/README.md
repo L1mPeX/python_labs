@@ -75,7 +75,7 @@ def format_record(record):
 ```
 
 Тесты запускаются автоматически по workflow:
-![Скриншот 1](lab02/materials/img.png)
+![Скриншот 1](./materials/img.png)
 
 ## Лицензия <a name="license"></a>
 
