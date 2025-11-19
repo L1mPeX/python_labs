@@ -111,7 +111,7 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 ```
 
 Тесты запускаются по скрипту tests.sh:
-![Скриншот 1](./materials/imgage.png)
+![Скриншот 1](./materials/image.png)
 
 ## Лицензия <a name="license"></a>
 
