@@ -1,6 +1,6 @@
 # Лабораторная работа № 5
 
-## Коллекции и матрицы (list/tuple/set/dict)
+## JSON и конвертации (JSON↔CSV, CSV→XLSX)
 
 csv_xlsx.py
 ```python
